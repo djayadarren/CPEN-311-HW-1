@@ -31,11 +31,4 @@ module tb_async_to_sync;
         #50;
         $finish;
     end
-
-    // Optional: monitor outputs
-    initial begin
-        $display("Time\toutclk\tasync_sig\tout_sync_sig");
-        $monitor("%4t\t%b\t%b\t\t%b", $time, outclk, async_sig, out_sync_sig);
-    end
-
 endmodule
